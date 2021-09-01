@@ -1,13 +1,3 @@
-
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
@@ -25,10 +15,6 @@ function newElement() {
     var storeValue=JSON.parse(localStorage.getItem("value"))
     document.getElementById("myUL").appendChild(li);
    
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
-      }
+    
     }
   }
